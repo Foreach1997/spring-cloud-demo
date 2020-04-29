@@ -1,16 +1,21 @@
 package com.xl.common.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.Objects;
 
+/**
+ * @author NING MEI
+ */
 @Entity
 @Table(name = "order", schema = "cloud", catalog = "")
-public class OrderEntity {
+public class OrderEntity implements Serializable {
     private long id;
     private String orderNo;
 
     @Id
     @Column(name = "id")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     public long getId() {
         return id;
     }

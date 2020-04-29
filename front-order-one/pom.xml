@@ -7,10 +7,9 @@
         <artifactId>spring-cloud-demo</artifactId>
         <version>1.0</version>
     </parent>
-
-    <artifactId>front-order</artifactId>
+    <artifactId>front-order-one</artifactId>
     <version>0.0.1</version>
-    <name>front-order</name>
+    <name>front-order-one</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -45,6 +44,10 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
